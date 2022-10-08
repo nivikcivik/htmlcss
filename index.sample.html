@@ -4,23 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Licholas Nam's</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   </head>
 
   <body>
-    <figure>
-      <img src="img/profile.png" />
-    </figure>
-
-    <h1>Licholas Nam</h1>
-    <h2>Full Stack web developer</h2>
-
+    <section class="hero is-large is-info">
+      <div class="hero-body">
+        <div class="container">
+          <div class="level">
+            <div class="level-item has-text-centered">
+              <figure>
+                <img src="img/profile.png" class="is-rounded"/>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <h1 class="title has-text-centered">Licholas Nam</h1>
+        <h2 class="subtitle has-text-centered">Full Stack web developer</h2>
+      </div>
+    </section>
     <section>
-      <h1>Major projects</h1>
+      <h1 class="title">Major projects</h1>
 
       <ul>
         <li>
           <div>
-            <h2>Fluminurs</h2>
+            <h2 class="subtitle">Fluminurs</h2>
             <figure>
               <img src="img/fluminurs-logo.png" alt="Fluminurs" />
             </figure>
@@ -40,7 +50,8 @@
         </li>
 
         <li>
-          <h1>Slime Volleyball</h1>
+          <div>
+          <h1 class="subtitle">Slime Volleyball</h1>
           <figure>
             <img src="img/slimevolleygym.gif" alt="Slime Volleyball" />
           </figure>
@@ -52,46 +63,51 @@
             </li>
             <li>Bop bop bop</li>
           </ul>
+          </div>
         </li>
       </ul>
     </section>
 
-    <section>
-      <h1>Testimonials</h1>
-      <p>People I've worked with say this about me&#8230;</p>
-      <ul>
-        <li>
-          <div>
+    <section class="section">
+      <h1 class="title">Testimonials</h1>
+      <p class="subtitle">People I've worked with say this about me&#8230;</p>
+      <ul class="columns">
+        <li class="column">
+          <div class="card-image">
             <figure><img src="img/vazeem.jpg" alt="Vazeem Asanala" /></figure>
-            <blockquote>
-              "10/10 would recommend to go on a Bali trip with for scuba diving
-              and snorkeling"
-            </blockquote>
-            <span>Vazeem Asanala</span>
-            <span>Suite mate, New College</span>
+            <div class="card-content has-text-centered">
+              <blockquote>
+                "10/10 would recommend to go on a Bali trip with for scuba diving
+                and snorkeling"
+              </blockquote>
+              <span>Vazeem Asanala</span>
+              <span>Suite mate, New College</span>
+            </div>
           </div>
         </li>
 
-        <li>
-          <div>
+        <li class="column">
+          <div class="card-image">
             <figure>
               <img src="img/bja.png" alt="Billie Joe Armstrong" />
             </figure>
-            <blockquote>"Wake me up when September ends"</blockquote>
-            <span>Billie Joe Armstrong</span>
-            <span>Lead vocalist, Green Day</span>
+            <div class="card-content has-text-centered">
+              <blockquote>"Wake me up when September ends"</blockquote>
+              <span>Billie Joe Armstrong</span>
+              <span>Lead vocalist, Green Day</span>
+            </div>
           </div>
         </li>
       </ul>
     </section>
 
-    <section>
+    <section class="mt-3">
       <h1>Contact me</h1>
-      <ul>
-        <li><a href="#">Linkedin</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">GitHub</a></li>
-        <li><a href="#">StackOverflow</a></li>
+      <ul class="level">
+        <li class="level-item-has-text-centered"><a href="#" class="button"><span class="icon mr-1"><i class="fa-brands fa-linkedin"></i></span>Linkedin</a></li>
+        <li class="level-item-has-text-centered"><a href="#" class="button"><span class="icon mr-1"><i class="fa-brands fa-twitter"></i></span>Twitter</a></li>
+        <li class="level-item-has-text-centered"><a href="#" class="button"><span class="icon mr-1"><i class="fa-brands fa-github"></i></span>GitHub</a></li>
+        <!-- <li><a href="#">StackOverflow</a></li> -->
       </ul>
     </section>
 
